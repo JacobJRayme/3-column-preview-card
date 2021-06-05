@@ -31,9 +31,11 @@ span{
 }
 
 .container{
-  width: 75%;
+  /* width: 75%; */
   height: 400px;
   margin: 15% auto;
+  margin-left: 150px;
+  margin-right: 150px;
   /* position: absolute;
   top: 50%;
   margin-top: -590px; */
@@ -42,7 +44,7 @@ span{
 
 .col{
   height: 400px;
-  width: 33%;
+  width: 33.333333333333%;
   float: left;
   position: relative;
 }
@@ -71,20 +73,35 @@ span{
   .col{
     float: none;
     display: block;
-    width: inherit;
-    height: 480px;
+    width: 400px;
+    /* height: 480px; */
   }
   .col1, .col2, .col3{
-    width: 100%;
-
-    display: block;
+    width: 400px;
     border-radius: 0;
   }
+  .col1{
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+  }
+  .col3{
+    border-bottom-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+  }
+  .container{
+    width: 400px;
+    height: 100%;
+    margin: 15% auto;
+    margin-left: 150px;
+    margin-right: 150px;
+    /* position: absolute;
+    top: 50%;
+    margin-top: -590px; */
+
+  }
+
   button{
     margin-bottom: 40px;
   }
 
-  .container{
-    margin-bottom: 50px;
-  }
 }
